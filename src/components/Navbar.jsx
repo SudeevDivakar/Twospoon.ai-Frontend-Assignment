@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./cssfiles/App.css";
 
 export default function Navbar() {
   const [isHeartHovered, setIsHeartHovered] = useState(false);
@@ -6,7 +7,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white h-20 border border-b-gray-400 flex justify-center">
-      <div className="flex justify-between items-center w-5/6 h-full">
+      <div className="flex justify-between items-center width-80 h-full">
         <a href="#">
           <img className="w-20 h-14" src="./navbrand.png" alt="" />
         </a>
@@ -14,7 +15,7 @@ export default function Navbar() {
           <input
             type="text"
             placeholder="Search"
-            className="rounded-lg px-3 pl-8 w-96 py-3 text bg-gray-100"
+            className="rounded-lg px-3 pl-8 w-96 py-3 bg-gray-100"
           />
           <a href="#">
             <i className="fa fa-search absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-black"></i>
@@ -50,13 +51,13 @@ export default function Navbar() {
             ></i>
           </a>
           <a href="#">
-            <i className="fa-solid fa-cart-shopping ml-12"></i>
+            <i className="fa-solid fa-cart-shopping ml-8"></i>
           </a>
           <a href="#">
             <i
               className={`fa-${
                 isUserHovered ? "solid" : "regular"
-              } fa-user ml-12`}
+              } fa-user ml-8`}
               onMouseEnter={() => setIsUserHovered(true)}
               onMouseLeave={() => setIsUserHovered(false)}
               style={{ color: isUserHovered ? "black" : "inherit" }}
