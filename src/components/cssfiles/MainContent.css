@@ -1,0 +1,32 @@
+.main-section-height {
+  height: 50rem;
+}
+
+.perfect-width {
+  width: 45%;
+}
+
+.perfect-height {
+  height: 90%;
+}
+
+.bottom-transition-border {
+  transition: border-bottom-color 0.3s ease;
+}
+
+.bottom-transition-border:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.card-width {
+  width: 18.6rem;
+}
+
+.perfect-width-form {
+  width: 48.5%;
+}
+
+.bg-transition {
+  transition: background-color 0.4s ease;
+}

@@ -24,13 +24,11 @@ export default function MainContent() {
           <input
             type="text"
             placeholder="Cardholder Name"
-            // className="rounded-lg px-3 pl-8 w-96 py-3 text bg-gray-100"
             className="rounded-lg border-2 pl-5 w-full py-3 mt-10"
           />
           <input
             type="text"
             placeholder="Card Number"
-            // className="rounded-lg px-3 pl-8 w-96 py-3 text bg-gray-100"
             className="rounded-lg border-2 pl-5 w-full py-3 mt-4"
           />
           <div className="flex justify-between">
