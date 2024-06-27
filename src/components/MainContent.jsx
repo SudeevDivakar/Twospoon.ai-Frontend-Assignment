@@ -3,8 +3,8 @@ import "./cssfiles/App.css";
 
 export default function MainContent() {
   return (
-    <section className="w-full main-section-height flex justify-center">
-      <div className="width-80 h-full flex mt-16 justify-between">
+    <section className="w-full flex justify-center">
+      <div className="width-80 h-full mt-8 flex justify-between">
         <section className="perfect-width perfect-height bg-zinc-900"></section>
         <section className="perfect-width perfect-height">
           <h1 className="font-semibold text-2xl mb-5">Payment</h1>
