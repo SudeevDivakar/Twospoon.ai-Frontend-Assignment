@@ -6,7 +6,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white h-20 border border-b-gray-400 flex justify-center">
-      <div className="flex justify-around items-center w-5/6 h-full">
+      <div className="flex justify-between items-center w-5/6 h-full">
         <a href="#">
           <img className="w-20 h-14" src="./navbrand.png" alt="" />
         </a>
@@ -25,17 +25,17 @@ export default function Navbar() {
             <h1 className="font-semibold text-lg">Home</h1>
           </a>
           <a href="#">
-            <h1 className="text-gray-500 text-lg font-semibold hover:text-black ml-12">
+            <h1 className="text-gray-500 text-lg font-semibold hover:text-black ml-16">
               About
             </h1>
           </a>
           <a href="#">
-            <h1 className="text-gray-500 font-semibold text-lg hover:text-black ml-12">
+            <h1 className="text-gray-500 font-semibold text-lg hover:text-black ml-16">
               Contact Us
             </h1>
           </a>
           <a href="#">
-            <h1 className="text-gray-500 font-semibold text-lg hover:text-black ml-12">
+            <h1 className="text-gray-500 font-semibold text-lg hover:text-black ml-16">
               Blog
             </h1>
           </a>
@@ -50,13 +50,13 @@ export default function Navbar() {
             ></i>
           </a>
           <a href="#">
-            <i className="fa-solid fa-cart-shopping ml-8"></i>
+            <i className="fa-solid fa-cart-shopping ml-12"></i>
           </a>
           <a href="#">
             <i
               className={`fa-${
                 isUserHovered ? "solid" : "regular"
-              } fa-user ml-8`}
+              } fa-user ml-12`}
               onMouseEnter={() => setIsUserHovered(true)}
               onMouseLeave={() => setIsUserHovered(false)}
               style={{ color: isUserHovered ? "black" : "inherit" }}
