@@ -4,13 +4,17 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
+import "./cssfiles/Footer.css";
 
 export default function Footer() {
   return (
     <>
       <section className="w-full mt-12 bg-black flex justify-center items-center flex-col">
-        <section className="width-80 flex justify-between mt-24">
-          <div className="width-30">
+        <section
+          id="footer-section"
+          className="width-80 flex justify-between mt-24"
+        >
+          <div id="sec-1" className="width-30">
             <h1 className="font-semibold text-white text-4xl mb-5">cyber</h1>
             <h3 className="text-gray-400 text-sm">
               We are a residential interior design firm located in Portland. Our
@@ -18,7 +22,7 @@ export default function Footer() {
             </h3>
           </div>
 
-          <div className="flex flex-col width-30">
+          <div id="sec-2" className="flex flex-col width-30">
             <h1 className="font-semibold text-white text-2xl mb-1">Services</h1>
             <a className="text-gray-400 text-sm hover:text-white" href="#">
               <h3 className="mt-2 mb-2">Bonus program</h3>
@@ -40,7 +44,7 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className="flex flex-col width-30">
+          <div id="sec-3" className="flex flex-col width-30">
             <h1 className="font-semibold text-white text-2xl mb-1">
               Assistance to the buyer
             </h1>
@@ -64,18 +68,18 @@ export default function Footer() {
             </a>
           </div>
         </section>
-        <div className="width-80 flex mb-24">
+        <div id="socials" className="width-80 flex mb-24">
           <a href="#">
-            <FaTwitter class="text-white mr-8" />
+            <FaTwitter className="text-white mr-8" />
           </a>
           <a href="#">
-            <FaFacebookF class="text-white mr-8" />
+            <FaFacebookF className="text-white mr-8" />
           </a>
           <a href="#">
-            <FaTiktok class="text-white mr-8" />
+            <FaTiktok className="text-white mr-8" />
           </a>
           <a href="#">
-            <AiFillInstagram class="text-white mr-8" />
+            <AiFillInstagram className="text-white mr-8" />
           </a>
         </div>
       </section>

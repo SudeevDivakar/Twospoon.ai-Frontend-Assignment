@@ -5,11 +5,14 @@ export default function MainContent() {
   return (
     <section className="w-full flex justify-center">
       <div className="width-80 h-full mt-8 flex justify-between">
-        <section className="perfect-width border-2 rounded-lg flex flex-col">
+        <section
+          id="summary-section"
+          className="perfect-width border-2 rounded-lg flex flex-col"
+        >
           <section className="width-90 flex flex-col self-center items-center">
             <h1 className="w-full text-2xl font-semibold mt-7 mb-3">Summary</h1>
             <div className="bg-gray-100 w-full flex my-2 rounded-xl justify-around py-3 pl-3 pr-5 items-center">
-              <img className="w-12" src="./iphone.jpg" alt="" />
+              <img className="w-12" src="./iphone.jpg" alt="iPhone" />
               <h2 className="grow ml-5">Apple iPhone 14 Pro Max 128Gb</h2>
               <h2 className="font-bold">$1399</h2>
             </div>
@@ -17,13 +20,17 @@ export default function MainContent() {
               <img
                 className="w-12 rounded-full"
                 src="./headphones.jpg"
-                alt=""
+                alt="Headphones"
               />
               <h2 className="grow ml-5">AirPods Max Silver</h2>
               <h2 className="font-bold">$549</h2>
             </div>
             <div className="bg-gray-100 w-full flex my-2 rounded-xl justify-around py-3 pl-3 pr-5 items-center">
-              <img className="w-12 rounded-full" src="./watch.jpg" alt="" />
+              <img
+                className="w-12 rounded-full"
+                src="./watch.jpg"
+                alt="Watch"
+              />
               <h2 className="grow ml-5">Apple Watch Series 9 GPS 41mm</h2>
               <h2 className="font-bold">$399</h2>
             </div>
@@ -51,21 +58,32 @@ export default function MainContent() {
             </div>
           </section>
         </section>
-        <section className="perfect-width">
-          <h1 className="font-bold text-2xl mb-5">Payment</h1>
-          <a className="mr-10 py-1 border-b-2 border-b-black" href="#">
-            <span>Credit Card</span>
+        <section id="payment-section" className="perfect-width">
+          <h1 id="payment-header" className="font-bold text-2xl mb-5">
+            Payment
+          </h1>
+          <a
+            id="payment-type-1"
+            className="mr-10 py-1 border-b-2 border-b-black"
+            href="#"
+          >
+            <span className="inline-block-lol">Credit Card</span>
           </a>
           <a
+            id="payment-type-2"
             className="mr-10 py-1 text-gray-500 bottom-transition-border"
             href="#"
           >
-            <span>PayPal</span>
+            <span className="inline-block-lol">PayPal</span>
           </a>
           <a className="py-1 text-gray-500 bottom-transition-border" href="#">
-            <span>PayPal Credit</span>
+            <span className="inline-block-lol">PayPal Credit</span>
           </a>
-          <img className="card-width mt-10" src="./creditcard.png" alt="" />
+          <img
+            className="card-width mt-10"
+            src="./creditcard.png"
+            alt="Credit Card"
+          />
           <input
             type="text"
             placeholder="Cardholder Name"
@@ -97,10 +115,16 @@ export default function MainContent() {
             </label>
           </div>
           <div className="flex justify-between">
-            <button className="py-6 bg-white border border-black text-black rounded-lg hover:bg-gray-400 hover:text-white perfect-width-form bg-transition">
+            <button
+              id="back-button"
+              className="py-6 bg-white border border-black text-black rounded-lg hover:bg-gray-400 hover:text-white perfect-width-form bg-transition"
+            >
               Back
             </button>
-            <button className="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-500 perfect-width-form bg-transition">
+            <button
+              id="pay-button"
+              className="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-500 perfect-width-form bg-transition"
+            >
               Pay
             </button>
           </div>

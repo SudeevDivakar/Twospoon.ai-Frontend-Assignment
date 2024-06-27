@@ -9,3 +9,28 @@
 .width-90 {
   width: 90%;
 }
+
+@media (max-width: 990px) {
+  .lg\\:block {
+    display: none;
+  }
+  .lg\\:flex {
+    display: none;
+  }
+  .lg\\:hidden {
+    display: block;
+  }
+}
+
+@media (max-width: 826px) {
+  #summary-section {
+    display: none;
+  }
+
+  #payment-section {
+    width: 90%;
+  }
+}
+
+@media (max-width: 458px) {
+}

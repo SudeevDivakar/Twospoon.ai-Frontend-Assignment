@@ -1,10 +1,11 @@
 import "./cssfiles/App.css";
+import "./cssfiles/StepsSection.css";
 
 export default function StepsSection() {
   return (
     <section className="w-full h-60 flex justify-center">
       <div className="width-80 h-full flex items-center justify-between">
-        <div className="flex h-1/5">
+        <div id="step-1" className="flex h-1/5">
           <div class="flex items-center h-full justify-center pr-2">
             <img class="rounded-full w-8" src="./loc_icon.jpg" alt="" />
           </div>

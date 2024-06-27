@@ -30,3 +30,37 @@
 .bg-transition {
   transition: background-color 0.4s ease;
 }
+
+.inline-block-lol {
+  display: inline-block;
+}
+
+@media (max-width: 414px) {
+  #payment-header {
+    font-size: 1.25rem;
+  }
+
+  #payment-type-1,
+  #payment-type-2 {
+    margin-right: 1rem;
+  }
+
+  #payment-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 315px) {
+  #payment-type-1,
+  #payment-type-2 {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 458px) {
+  #pay-button,
+  #back-button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}

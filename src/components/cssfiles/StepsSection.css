@@ -1,0 +1,5 @@
+@media (max-width: 458px) {
+  #step-1 {
+    display: none;
+  }
+}
