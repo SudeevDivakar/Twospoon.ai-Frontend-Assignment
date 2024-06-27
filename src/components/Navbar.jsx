@@ -1,15 +1,19 @@
 import { useState } from "react";
+import { FaHeart, FaRegHeart, FaUser, FaRegUser } from "react-icons/fa";
+import { MdOutlineShoppingCart } from "react-icons/md";
+import { MdShoppingCart } from "react-icons/md";
 import "./cssfiles/App.css";
 
 export default function Navbar() {
   const [isHeartHovered, setIsHeartHovered] = useState(false);
+  const [isCartHovered, setIsCartHovered] = useState(false);
   const [isUserHovered, setIsUserHovered] = useState(false);
 
   return (
     <nav className="bg-white h-20 border border-b-gray-400 flex justify-center">
       <div className="flex justify-between items-center width-80 h-full">
         <a href="#">
-          <img className="w-20 h-14" src="./navbrand.png" alt="" />
+          <h1 className="font-bold text-black text-4xl">cyber</h1>
         </a>
         <div className="relative">
           <input
@@ -41,27 +45,39 @@ export default function Navbar() {
             </h1>
           </a>
         </div>
-        <div>
-          <a href="#">
-            <i
-              className={`fa-${isHeartHovered ? "solid" : "regular"} fa-heart`}
-              onMouseEnter={() => setIsHeartHovered(true)}
-              onMouseLeave={() => setIsHeartHovered(false)}
-              style={{ color: isHeartHovered ? "black" : "inherit" }}
-            ></i>
+        <div className="flex">
+          <a
+            href="#"
+            onMouseEnter={() => setIsHeartHovered(true)}
+            onMouseLeave={() => setIsHeartHovered(false)}
+          >
+            {isHeartHovered ? (
+              <FaHeart className="text-black mr-6" />
+            ) : (
+              <FaRegHeart className="text-black mr-6" />
+            )}
           </a>
-          <a href="#">
-            <i className="fa-solid fa-cart-shopping ml-8"></i>
+          <a
+            href="#"
+            onMouseEnter={() => setIsCartHovered(true)}
+            onMouseLeave={() => setIsCartHovered(false)}
+          >
+            {isCartHovered ? (
+              <MdShoppingCart className="text-black mr-6" />
+            ) : (
+              <MdOutlineShoppingCart className="text-black mr-6" />
+            )}
           </a>
-          <a href="#">
-            <i
-              className={`fa-${
-                isUserHovered ? "solid" : "regular"
-              } fa-user ml-8`}
-              onMouseEnter={() => setIsUserHovered(true)}
-              onMouseLeave={() => setIsUserHovered(false)}
-              style={{ color: isUserHovered ? "black" : "inherit" }}
-            ></i>
+          <a
+            href="#"
+            onMouseEnter={() => setIsUserHovered(true)}
+            onMouseLeave={() => setIsUserHovered(false)}
+          >
+            {isUserHovered ? (
+              <FaUser className="text-black mr-6" />
+            ) : (
+              <FaRegUser className="text-black mr-6" />
+            )}
           </a>
         </div>
       </div>
