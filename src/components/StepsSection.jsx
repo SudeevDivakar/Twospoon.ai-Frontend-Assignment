@@ -6,8 +6,8 @@ export default function StepsSection() {
     <section className="w-full h-60 flex justify-center">
       <div className="width-80 h-full flex items-center justify-between">
         <div id="step-1" className="flex h-1/5">
-          <div class="flex items-center h-full justify-center pr-2">
-            <img class="rounded-full w-8" src="./loc_icon.jpg" alt="" />
+          <div className="flex items-center h-full justify-center pr-2">
+            <img className="rounded-full w-8" src="./loc_icon.jpg" alt="" />
           </div>
           <div className="flex flex-col">
             <span className="text-gray-500 font-medium">Step 1</span>
@@ -15,8 +15,12 @@ export default function StepsSection() {
           </div>
         </div>
         <div className="flex h-1/5">
-          <div class="flex items-center h-full justify-center pr-2">
-            <img class="rounded-full w-8" src="./shipment_icon.jpg" alt="" />
+          <div className="flex items-center h-full justify-center pr-2">
+            <img
+              className="rounded-full w-8"
+              src="./shipment_icon.jpg"
+              alt=""
+            />
           </div>
           <div className="flex flex-col">
             <span className="text-gray-500 font-medium">Step 2</span>
@@ -24,8 +28,8 @@ export default function StepsSection() {
           </div>
         </div>
         <div className="flex h-1/5">
-          <div class="flex items-center h-full justify-center pr-2">
-            <img class="rounded-full w-8" src="./payment_icon.jpg" alt="" />
+          <div className="flex items-center h-full justify-center pr-2">
+            <img className="rounded-full w-8" src="./payment_icon.jpg" alt="" />
           </div>
           <div className="flex flex-col">
             <span className="text-zinc-900 font-medium">Step 3</span>
